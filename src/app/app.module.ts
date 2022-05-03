@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       {path:'products/:productId',component:ProductDetailsComponent },
@@ -31,7 +32,6 @@ import { FormsModule } from '@angular/forms';
     CartViewComponent,
     DisplayVoteComponent,
     VoteComponent,
-    FormsModule,
   ],
   bootstrap: [
     AppComponent

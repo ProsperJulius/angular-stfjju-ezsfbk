@@ -4,9 +4,10 @@
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
-  <p>{{name}}</p>
+ 
 
   <form>
+  <p>Your name is {{name}}</p>
   <input type="text" [(ngModel)]="name">
   </form>
   <button type="button" (click)="addToCart(product)">Buy</button>
