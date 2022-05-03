@@ -1,0 +1,13 @@
+<app-vote
+[question]="question"
+[noAnswer]="noAnswer"
+[yesAnswer]="yesAnswer"
+(output)="receiveVote($event)"
+>
+
+</app-vote>
+<div>
+<p *ngIf="output">yes</p>
+<p *ngIf="output===false">no</p>
+
+</div>
