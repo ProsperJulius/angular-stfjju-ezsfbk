@@ -10,6 +10,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartViewComponent } from './cart-view/cart-view.component';
 import { DisplayVoteComponent } from './display-vote/display-vote.component';
 import { VoteComponent } from './vote/vote.component';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { VoteComponent } from './vote/vote.component';
     CartViewComponent,
     DisplayVoteComponent,
     VoteComponent,
+    FormsModule,
   ],
   bootstrap: [
     AppComponent
